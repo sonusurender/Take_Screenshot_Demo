@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.takescreenshot_demo.MainActivity">
+
+    <!--  Button which will take full page screenshot  -->
+    <Button
+        android:id="@+id/full_page_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/full_page_screenshot"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <!--   Hidden Text which will shown when taking screenshot from below Button  -->
+    <TextView
+        android:id="@+id/hidden_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/hidden_text"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <!--  Button which will take screenshot after hiding some view and showing some view  -->
+    <Button
+        android:id="@+id/custom_page_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_page_screenshot"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+    <!--  ImageView to show taken Screenshot  -->
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher" />
+
+</LinearLayout>
